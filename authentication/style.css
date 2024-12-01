@@ -1,0 +1,95 @@
+:root {
+  --background: rgb(20, 20, 43);
+  --nav: rgb(36, 38, 58);
+  --button: #246b69;
+  --text: #fff;
+}
+
+
+/* Set font size for rem units */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  background: var(--background);
+}
+
+.illustration {
+  flex: 1;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+.form-container {
+  flex: 1;
+  background: var(--nav);
+  color: var(--text);
+  padding: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: var(--text);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.signup-btn , .signin-btn {
+  background-color: var(--button);
+  color: var(--text);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.signup-btn:hover , .signin-btn:hover{
+  background-color: var(--button);
+}
+
+a {
+  cursor: pointer;
+  color: var(--button);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}

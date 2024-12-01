@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <div class="top-navbar">
+      <h1 class="greeting">Hi, User!</h1>
+    </div>
+    
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+      <!-- Left Navbar -->
+      <div class="left-navbar">
+        <button data-section="tasks" class="active">Tasks</button>
+        <button data-section="calendar">Calendar</button>
+        <button id="btnlogout">Logout</button>
+      </div>
+      
+      <!-- Main Content -->
+      <div id="main-content">
+        <div class="task-box" style="display: none;">
+          <img src="../assets/checkbox_00.svg" alt="Checkbox false" width="50" height="50">
+          <p>Temperory</p>
+        </div>
+      </div>
+
+    <!-- Add Task Button -->
+    <button class="add-task-btn" id="add-task-btn">+</button>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close-btn">&times;</span> -->
+        <form id="task-form">
+          <div class="form-group">
+            <div>
+              <label for="task-title">Add New Task :</label>
+              <input type="text" id="task-title" required />
+            </div>
+            <button type="button" class="modal-btn" id="Update-task">Update Task</button>
+            <button type="button" class="modal-btn" id="add-task">Add Task</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="main_dash.js"></script>
+  </body>
+</html>
