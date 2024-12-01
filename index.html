@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>ī
+    <div class="container">
+      <div class="illustration">
+        <img src="../assets/developer-team.svg" alt="Illustration" />
+      </div>
+      <div class="form-container">
+
+        <div id="signup">
+          <h1>Create Your Account Now</h1>
+          <form action="#" id="signupform">
+            <div class="form-group">
+              <label for="SUname">Name</label>
+              <input type="text" id="SUname" name="name" placeholder="Name" />
+            </div>
+            <div class="form-group">
+              <label for="SUemail">E-mail</label>
+              <input type="email" id="SUemail" placeholder="E-mail" />
+            </div>
+            <div class="form-group">
+              <label for="SUpassword">Password</label>
+              <input type="password" id="SUpassword" placeholder="Password" />
+            </div>
+            <button type="submit" class="signup-btn">Sign Up</button>
+          </form>
+          <p>Already have an account? <a id="signin-toggle">Sign in</a></p>
+        </div>
+          
+          <div id="signin">
+            <h1>Sign In</h1>
+            <form action="#" id="signinform">
+              <div class="form-group">
+                <label for="SIemail">E-mail</label>
+                <input type="email" id="SIemail" placeholder="E-mail" />
+              </div>
+              <div class="form-group">
+                <label for="SIpassword">Password</label>
+                <input type="password" id="SIpassword" placeholder="Password" />
+              </div>
+              <button type="submit" class="signin-btn">Sign in</button>
+            </form>
+            <p>New here? Create a new account here. <a id="signup-toggle">Sign up</a></p>
+          </div>
+          
+        </div>
+      </div>
+      <script src="main_auth.js"></script>
+    </body>
+</html>
