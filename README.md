@@ -84,3 +84,6 @@ npm start
 
 ## Contributing
 Feel free to open issues or submit pull requests.
+
+## Note
+"This is my first web app, so there may be some issues."
